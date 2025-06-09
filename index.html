@@ -85,5 +85,17 @@
   <footer>
     <p>&copy; 2025 Urban Prime. Todos os direitos reservados.</p>
   </footer>
+  <script>
+    // Scroll JS para fallback de navegadores
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
