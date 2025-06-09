@@ -4,43 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Prime</title>
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/shopping-bag.png" type="image/png">
   <style>
-    html {
-      scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #111; color: #fff; padding: 20px; text-align: center; }
-    nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
-    .hero { padding: 40px; background: #222; color: white; text-align: center; }
-    section[id] { scroll-margin-top: 80px; }
-    .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-    .product { background: #fff; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .product img { width: 100%; border-radius: 8px; }
-    .product h3 { margin: 10px 0 5px; }
-    .product p { color: #555; font-size: 14px; }
-    .product button { background: #111; color: #fff; border: none; padding: 10px; width: 100%; border-radius: 5px; cursor: pointer; }
-    footer { background: #111; color: #fff; text-align: center; padding: 20px; }
-    #contato { padding: 40px 20px; background: #eee; text-align: center; }
-    #produtos h2 { text-align: center; font-size: 28px; margin-bottom: 10px; margin-top: 40px; }
-
-    @media (max-width: 768px) {
-      .products {
-        flex-direction: column;
-        align-items: center;
-      }
-      .product {
-        width: 90% !important;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
+    header {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: #222;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+    .product {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #ccc;
+      font-size: 14px;
+    }
+    .product button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      background: #0f62fe;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #contato {
+      background: #191919;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer {
+      background: #0f0f0f;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    @media(max-width: 768px) {
+      .products { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
   <header id="inicio">
+    <img src="https://img.icons8.com/ios-filled/50/shopping-bag.png" alt="Logo">
     <h1>Urban Prime</h1>
     <p>Seu estilo, direto da fonte.</p>
     <nav>
@@ -56,25 +112,25 @@
     <p>Compre com segurança e receba direto em casa.</p>
   </section>
   <section id="produtos">
-    <h2>Nossos Produtos</h2>
+    <h2 style="text-align:center;">Nossos Produtos</h2>
     <div class="products">
       <div class="product">
         <img src="https://via.placeholder.com/280x180.png?text=Relógio+LED" alt="Relógio LED">
         <h3>Relógio LED Minimalista</h3>
         <p>Estilo e função em um só acessório. Frete grátis!</p>
-        <button onclick="window.location.href='https://wa.me/5571996694604?text=Ol%C3%A1,+tenho+interesse+no+Rel%C3%B3gio+LED'">Comprar via WhatsApp</button>
+        <button onclick="window.location.href='https://wa.me/5571996694604?text=Tenho+interesse+no+Relógio+LED'">Comprar via WhatsApp</button>
       </div>
       <div class="product">
         <img src="https://via.placeholder.com/280x180.png?text=Ventilador+USB" alt="Ventilador">
         <h3>Mini Ventilador USB</h3>
         <p>Potente, portátil e silencioso. Ideal para o verão.</p>
-        <button onclick="window.location.href='https://wa.me/5571996694604?text=Ol%C3%A1,+tenho+interesse+no+Mini+Ventilador+USB'">Comprar via WhatsApp</button>
+        <button onclick="window.location.href='https://wa.me/5571996694604?text=Tenho+interesse+no+Ventilador+USB'">Comprar via WhatsApp</button>
       </div>
       <div class="product">
         <img src="https://via.placeholder.com/280x180.png?text=Suporte+Notebook" alt="Suporte">
         <h3>Suporte para Notebook</h3>
         <p>Melhore sua postura e produtividade.</p>
-        <button onclick="window.location.href='https://wa.me/5571996694604?text=Ol%C3%A1,+tenho+interesse+no+Suporte+para+Notebook'">Comprar via WhatsApp</button>
+        <button onclick="window.location.href='https://wa.me/5571996694604?text=Tenho+interesse+no+Suporte+para+Notebook'">Comprar via WhatsApp</button>
       </div>
     </div>
   </section>
@@ -84,18 +140,7 @@
   </section>
   <footer>
     <p>&copy; 2025 Urban Prime. Todos os direitos reservados.</p>
+    <p>Instagram: @urbanprime | WhatsApp: (71) 99669-4604</p>
   </footer>
-  <script>
-    // Scroll JS para fallback de navegadores
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  </script>
 </body>
 </html>
