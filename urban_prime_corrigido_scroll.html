@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Prime</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #111; color: #fff; padding: 20px; text-align: center; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    .hero { padding: 40px; background: #222; color: white; text-align: center; }
+    section[id] { scroll-margin-top: 80px; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .product { background: #fff; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product img { width: 100%; border-radius: 8px; }
+    .product h3 { margin: 10px 0 5px; }
+    .product p { color: #555; font-size: 14px; }
+    .product button { background: #111; color: #fff; border: none; padding: 10px; width: 100%; border-radius: 5px; cursor: pointer; }
+    footer { background: #111; color: #fff; text-align: center; padding: 20px; }
+    #contato { padding: 40px 20px; background: #eee; text-align: center; }
+    #produtos h2 { text-align: center; font-size: 28px; margin-bottom: 10px; margin-top: 40px; }
+
+    @media (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product {
+        width: 90% !important;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="inicio">
+    <h1>Urban Prime</h1>
+    <p>Seu estilo, direto da fonte.</p>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Os mais vendidos do mês</h2>
+    <p>Compre com segurança e receba direto em casa.</p>
+  </section>
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/280x180.png?text=Relógio+LED" alt="Relógio LED">
+        <h3>Relógio LED Minimalista</h3>
+        <p>Estilo e função em um só acessório. Frete grátis!</p>
+        <button onclick="window.location.href='https://wa.me/5571996694604?text=Ol%C3%A1,+tenho+interesse+no+Rel%C3%B3gio+LED'">Comprar via WhatsApp</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/280x180.png?text=Ventilador+USB" alt="Ventilador">
+        <h3>Mini Ventilador USB</h3>
+        <p>Potente, portátil e silencioso. Ideal para o verão.</p>
+        <button onclick="window.location.href='https://wa.me/5571996694604?text=Ol%C3%A1,+tenho+interesse+no+Mini+Ventilador+USB'">Comprar via WhatsApp</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/280x180.png?text=Suporte+Notebook" alt="Suporte">
+        <h3>Suporte para Notebook</h3>
+        <p>Melhore sua postura e produtividade.</p>
+        <button onclick="window.location.href='https://wa.me/5571996694604?text=Ol%C3%A1,+tenho+interesse+no+Suporte+para+Notebook'">Comprar via WhatsApp</button>
+      </div>
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Fale conosco</h2>
+    <p>Atendimento via WhatsApp: <a href="https://wa.me/5571996694604" target="_blank">Clique aqui</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Urban Prime. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
